@@ -1,0 +1,104 @@
+/* variables */
+:root{
+    --lightgray: rgb(77, 76, 76);
+    --superlight: rgb(253, 253, 253);
+    --pricolor: rgb(209, 24, 24);
+}
+/* fonts */
+@font-face {
+    font-family: Nunito-Bold;
+    src: url(../../assets/fonts/NUNITO-BOLD.TTF);
+}
+@font-face {
+    font-family: Nunito;
+    src: url(../../assets/fonts/NUNITO-REGULAR.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Nunito;
+    background-color: var(--superlight);
+}
+/* main accordion container */
+.links{
+    max-width: 600px;
+    margin: auto auto;
+    padding: 15px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px 30px rgb(0,0,0,0.02);
+}
+/* header for cim links */
+header{
+    margin-bottom: 20px;
+    background-color: var(--pricolor);
+    height: 50px;
+}
+.myNavbar{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myNavbar a{
+    text-decoration: none;
+    color: white;
+    font-family: Lemon-Milk, Poppins, sans-serif;
+}
+.linkHidden{
+    visibility: hidden;
+}
+/* for plain items(not buttons etc) */
+.plain-item{
+    padding: 1rem 1.25rem;
+    color: var(--lightgray);
+}
+.accordion-button{
+    font-weight: bold;
+    color: var(--lightgray);
+    font-family: Nunito-Bold;
+}
+.accordion-body{
+    border: 1px solid rgb(255, 244, 244);
+}
+
+/* anchor links container */
+.anchor-links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* for team logos */
+img{
+    height: 25px;
+    margin-right: 20px;
+}
+/* style for links, children */
+.anchor-links{
+    text-decoration: none;
+    background-color: #146cf0;
+    color: white;
+    margin:0 5px;
+}
+.anchor-links:hover{
+    background-color: #0a58ca;
+    color: white;
+}
+/* copylink btn */
+.btn-copy{
+    color: white;
+    background-color: #09db79;
+}
+.btn-copy:hover{
+    color: white;
+    background-color: #03aa5c;
+}
+/* input type that has the value of links   */
+.hide{
+    display: none;
+    
+}
+
+  
